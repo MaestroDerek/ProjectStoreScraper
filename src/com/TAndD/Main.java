@@ -7,5 +7,6 @@ public class Main {
         System.out.print(start);
 
         //monkaS
+        //pushing thru command line xd
     }
 }
