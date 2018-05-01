@@ -7,6 +7,6 @@ public class Main {
         System.out.print(start);
 
         //monkaS
-        //pushing thru command line xd
+        //pushing thru command line xD -- Correction: its xD
     }
 }
