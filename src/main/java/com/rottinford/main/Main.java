@@ -1,5 +1,7 @@
 package main.java.com.rottinford.main;
 
+import main.java.com.rottinford.product.Product;
+
 public class Main {
 
     public static void main(String[] args)
@@ -7,7 +9,7 @@ public class Main {
         String start = "haHAA now you do all the work xD";
         System.out.print(start);
 
-        //monkaS
-        //pushing thru command line xD -- Correction: its xD
+        Product testProduct = new Product();
+
     }
 }
