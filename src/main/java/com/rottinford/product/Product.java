@@ -1,36 +1,40 @@
 package main.java.com.rottinford.product;
 
+import org.joda.money.Money;
+
+import java.util.Currency;
+
 public class Product {
 
-    private enum itemType {
+    public enum itemType {
         FOOD, TECH, TEST
     }
 
-    private double price;
-    private String name;
-    private itemType type;
+    private Money             price;    //from Joda.money library http://www.joda.org/joda-money/
+    private String            name;
+    private itemType          type;
 
     //Default constructor. Fill with basic values
     public Product() {
 
-        this.price = 0.00;
+        this.price = Money.parse ("USD 0.00");
         this.name = "ProductName";
         this.type = itemType.TEST;
     }
 
     //Constructor
     public Product(double price, String name, itemType type) {
-        this.price = price;
+        this.price = Money.parse("USD "  + price);
         this.name = name;
         this.type = type;
     }
 
-    public double getPrice() {
+    public Money getPrice() {
         return price;
     }
 
     public void setPrice(double price) {
-        this.price = price;
+        Money.parse("USD "  + price);
     }
 
     public String getName() {
